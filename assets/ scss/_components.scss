@@ -1,0 +1,22 @@
+
+button {
+  padding: 14px 20px;
+  background: $color-primary;
+  color: white;
+  border: none;
+  border-radius: $radius;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: $color-primary-dark;
+}
+
+.card {
+  background: $color-white;
+  border-radius: $radius;
+  box-shadow: $shadow-soft;
+  padding: 30px;
+}

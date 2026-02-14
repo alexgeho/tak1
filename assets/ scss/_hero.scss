@@ -1,42 +1,20 @@
 .hero {
-  padding: 60px 0;
+  padding: 100px 0;
 }
 
 .hero-grid {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 60px;
 }
-
-/* LEFT TEXT */
 
 .hero-text h1 {
-  font-size: 32px;
-  line-height: 1.2;
-  margin-bottom: 15px;
+  font-size: 42px;
 }
-
-.hero-text p {
-  font-size: 16px;
-  color: #555;
-  max-width: 500px;
-}
-
-/* FORM CARD */
 
 .form-box {
-  background: #ffffff;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  @extend .card;
 }
-
-.form-box h2 {
-  font-size: 22px;
-  margin-bottom: 15px;
-}
-
-/* CONTACT INFO ABOVE FORM */
 
 .form-contact-info {
   margin-bottom: 20px;
@@ -46,58 +24,34 @@
   display: block;
   font-size: 20px;
   font-weight: 700;
-  color: #1f5edc;
-  text-decoration: none;
+  color: $color-primary;
   margin-bottom: 6px;
 }
 
 .email-small {
-  display: block;
   font-size: 14px;
-  color: #555;
-  text-decoration: none;
-  margin-bottom: 15px;
+  color: $color-muted;
 }
-
-/* FORM ELEMENTS */
 
 .form-box form {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
 }
 
 .form-box input,
 .form-box textarea {
-  padding: 12px 14px;
+  padding: 14px;
+  border: 1px solid $color-border;
+  border-radius: $radius;
   font-size: 15px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
   font-family: inherit;
 }
 
 .form-box textarea {
+  min-height: 120px;
   resize: vertical;
-  min-height: 100px;
 }
-
-.form-box button {
-  margin-top: 10px;
-  padding: 14px;
-  background: #1f5edc;
-  color: white;
-  font-weight: 600;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.2s ease;
-}
-
-.form-box button:hover {
-  background: #174bb5;
-}
-
-/* DESKTOP */
 
 @media (min-width: 768px) {
   .hero-grid {
@@ -107,7 +61,7 @@
 
   .hero-text {
     flex: 1;
-    padding-right: 40px;
+    padding-right: 60px;
   }
 
   .form-box {
@@ -115,6 +69,6 @@
   }
 
   .hero-text h1 {
-    font-size: 42px;
+    font-size: 56px;
   }
 }

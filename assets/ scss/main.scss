@@ -1,4 +1,7 @@
-@use 'header';
-@use 'scss';
-@use 'hero';
-@use 'mainBlocks';
+@import 'variables';
+@import 'base';
+@import 'layout';
+@import 'components';
+@import 'hero';
+@import 'sections';
+@import 'header';

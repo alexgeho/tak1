@@ -1,24 +1,32 @@
 .header {
   background: white;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid $color-border;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 70px;
 }
 
-/* ===== MOBILE ===== */
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+}
 
 .nav {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
   position: absolute;
-  top: 10%;
-  right: -10%;
+  right: 0;
+  top: 70px;
   background: white;
   width: 100%;
-  flex-direction: column;
-  display: none;
   padding: 20px;
 }
 
@@ -26,30 +34,24 @@
   display: none;
 }
 
-.burger {
-  display: block;
-  font-size: 28px;
-  cursor: pointer;
-}
-
-/* checkbox active */
 .menu-toggle:checked ~ .nav {
   display: flex;
 }
 
-/* ===== DESKTOP ===== */
+.burger {
+  font-size: 28px;
+  cursor: pointer;
+}
 
-@media (min-width: 769px) {
-
+@media (min-width: 768px) {
   .burger {
     display: none;
   }
 
   .nav {
-    position: static;
     display: flex;
+    position: static;
     flex-direction: row;
-    gap: 30px;
     width: auto;
     padding: 0;
   }
