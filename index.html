@@ -45,21 +45,44 @@
     <section class="hero container">
       <div class="hero-grid">
 
-        <div>
-          <h2>Behöver du renovera ditt tak?</h2>
+        <!-- TEXT -->
+        <div class="hero-text">
+          <h1>Takrenovering i Stockholm</h1>
           <p>
-            Vi erbjuder professionell takrenovering i hela Stockholm.
+            Professionell takrenovering i hela Stockholm.
             Gratis offert och ROT-avdrag.
           </p>
         </div>
 
+        <!-- FORM -->
         <div class="form-box">
-          <form>
-            <input type="text" placeholder="Namn" required>
-            <input type="tel" placeholder="Telefon" required>
-            <textarea placeholder="Beskriv ditt projekt"></textarea>
-            <button type="submit">Skicka offertförfrågan</button>
+
+          <h2>Få en gratis offert</h2>
+
+          <div class="form-contact-info">
+            <a href="tel:0707757846" class="phone-big">
+              📞 070 775 78 46
+            </a>
+
+            <a href="mailto:info@dittforetag.se" class="email-small">
+              ✉ info@dittforetag.se
+            </a>
+          </div>
+
+          <form method="POST" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Namn *" required>
+
+            <input type="tel" name="phone" placeholder="Telefon *" required>
+
+            <input type="email" name="email" placeholder="E-post">
+
+            <textarea name="message" placeholder="Beskrivning"></textarea>
+
+            <input type="file" name="file" accept="image/*">
+
+            <button type="submit">Skicka förfrågan</button>
           </form>
+
         </div>
 
       </div>
