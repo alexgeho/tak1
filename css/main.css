@@ -56,9 +56,15 @@ body {
   line-height: 1.6;
 }
 
+.trust,
+.faq,
+.content-block {
+  text-align: center;
+}
+
 .container {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
   padding: 20px;
 }
 
@@ -74,7 +80,8 @@ body {
   gap: 15px;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 12px;
   font-size: 16px;
   border: 1px solid #ddd;
@@ -204,5 +211,48 @@ footer {
   }
   .hero-text h1 {
     font-size: 42px;
+  }
+}
+.two-column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.two-column .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.trust-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.trust-list li {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.faq-item {
+  margin-bottom: 25px;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .two-column {
+    flex-direction: row;
+    align-items: center;
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  .two-column .text {
+    flex: 0 0 60%;
+  }
+  .two-column .image {
+    flex: 0 0 40%;
   }
 }
