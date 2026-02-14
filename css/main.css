@@ -61,7 +61,7 @@ button:hover {
 .hero {
   position: relative;
   padding: 60px 24px 40px;
-  background: url("../../public/images/hero.jpg") center/cover no-repeat;
+  background: url("../images/hero.jpg") center/cover no-repeat;
   color: #fff;
 }
 
