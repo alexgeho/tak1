@@ -1,0 +1,56 @@
+.header {
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===== MOBILE ===== */
+
+.nav {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  background: white;
+  width: 100%;
+  flex-direction: column;
+  display: none;
+  padding: 20px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.burger {
+  display: block;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* checkbox active */
+.menu-toggle:checked ~ .nav {
+  display: flex;
+}
+
+/* ===== DESKTOP ===== */
+
+@media (min-width: 769px) {
+
+  .burger {
+    display: none;
+  }
+
+  .nav {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: auto;
+    padding: 0;
+  }
+}

@@ -1,0 +1,95 @@
+.header {
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===== MOBILE ===== */
+.nav {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  background: white;
+  width: 100%;
+  flex-direction: column;
+  display: none;
+  padding: 20px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.burger {
+  display: block;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* checkbox active */
+.menu-toggle:checked ~ .nav {
+  display: flex;
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 769px) {
+  .burger {
+    display: none;
+  }
+  .nav {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: auto;
+    padding: 0;
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 12px;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+}
