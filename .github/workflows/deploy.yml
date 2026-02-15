@@ -23,3 +23,9 @@ jobs:
           port: ${{ secrets.FTP_PORT }}
           local-dir: ./
           server-dir: domains/villatakservice.se/public_html/
+          exclude: |
+                **/.git*
+                **/node_modules/**
+                package.json
+                package-lock.json
+                README.md
