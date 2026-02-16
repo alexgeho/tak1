@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 * {
   box-sizing: border-box;
 }
@@ -11,14 +12,16 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0 0 16px;
   line-height: 1.2;
 }
 
 p {
   margin: 0 0 16px;
-  color: #666;
+  color: #af0f0f;
 }
 
 a {
@@ -139,6 +142,7 @@ button:hover {
   border-radius: 18px;
   box-shadow: 0 30px 70px rgba(0, 0, 0, 0.25);
 }
+
 .form-box h2 {
   color: #1f5edc;
 }
@@ -205,21 +209,26 @@ button:hover {
   .hero {
     padding: 120px 20px;
   }
+
   .hero-grid {
     flex-direction: column;
     gap: 50px;
   }
+
   .hero-text h1 {
     font-size: 46px;
   }
+
   .hero-text p {
     font-size: 20px;
   }
+
   .form-box {
     width: 100%;
     max-width: 520px;
   }
 }
+
 .two-column {
   display: flex;
   flex-direction: column;
@@ -259,21 +268,7 @@ button:hover {
   margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
-  .two-column {
-    flex-direction: row;
-    align-items: center;
-  }
-  .reverse {
-    flex-direction: row-reverse;
-  }
-  .two-column .text {
-    flex: 0 0 60%;
-  }
-  .two-column .image {
-    flex: 0 0 40%;
-  }
-}
+
 .header {
   background: white;
   border-bottom: 1px solid #e5e7eb;
@@ -310,7 +305,7 @@ button:hover {
   display: none;
 }
 
-.menu-toggle:checked ~ .nav {
+.menu-toggle:checked~.nav {
   display: flex;
 }
 
@@ -320,14 +315,38 @@ button:hover {
 }
 
 @media (min-width: 768px) {
+
+  p {
+  margin: 0 0 16px;
+  color: #666;
+  font-size: 1.2rem;
+}
   .burger {
     display: none;
   }
+
   .nav {
     display: flex;
     position: static;
     flex-direction: row;
     width: auto;
     padding: 0;
+  }
+
+  .two-column {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .two-column .text {
+    flex: 0 0 60%;
+  }
+
+  .two-column .image {
+    flex: 0 0 40%;
   }
 }
