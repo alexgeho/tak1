@@ -1,4 +1,3 @@
-
 .two-column {
   display: flex;
   flex-direction: column;
@@ -38,10 +37,18 @@
   margin-bottom: 20px;
 }
 
+
 @media (min-width: 768px) {
   .two-column {
     flex-direction: row;
     align-items: center;
+  }
+
+  .two-text-column {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
   }
 
   .reverse {
