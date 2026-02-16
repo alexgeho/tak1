@@ -1,66 +1,68 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  line-height: 1.5;
-  color: #222;
-}
+.bygg-renovering-page {
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+  .br-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    background-color: #fff
 
-.hero {
-  background: #f1f1f1;
-  padding: 60px 0;
-  text-align: center;
-
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-
-  p {
-    font-size: 1rem;
-    color: #555;
-  }
-}
-
-.services {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  padding: 40px 0;
-
-  .service-block {
-    background: #eaeaea;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-
-    h2 {
-      font-size: 1.4rem;
-      margin-bottom: 10px;
+    h1 {
+        font-weight: 300;
     }
 
     p {
-      font-size: 1rem;
-      color: #333;
+        color: #f2f2f2;
+        font-size: 1.5rem;
+    }
+    display: flex;
+    flex-direction: column;
+  }
+
+  .br-hero {
+    padding: 60px 0;
+    background: #111;
+    color: #fff;
+    text-align: center;
+  }
+
+  .br-hero h1 {
+    font-size: 3rem;
+  }
+
+  .br-services {
+    padding: 40px 0;
+  }
+
+  .br-services-grid {
+    display: flex;
+    gap: 40px;
+  }
+
+  .br-service-card {
+    flex: 1;
+    padding: 30px;
+    background: #eaeaea;
+    border-radius: 8px;
+
+     p {
+        color: #111;
     }
   }
 
-  @media (min-width: 768px) {
-    flex-direction: row;
-    .service-block {
-      flex: 1;
+  .br-extra {
+    text-align: center;
+
+    p {
+        color: #111;
     }
   }
+  
+@media (min-width: 992px) {
+      .br-services-grid {
+        display: flex;
+        flex-direction: row;
+  }
+
+
 }
-
-.extra-text {
-  padding: 40px 0;
-  text-align: center;
-  font-size: 1rem;
-  color: #222;
 }
