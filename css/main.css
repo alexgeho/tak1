@@ -450,6 +450,10 @@ button:hover {
   background: #111;
   color: #fff;
   text-align: center;
+  background-image: url("../images/byggRenovering/heroRenovering.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .bygg-renovering-page .br-hero h1 {
   font-size: 3rem;
@@ -464,10 +468,17 @@ button:hover {
 .bygg-renovering-page .br-service-card {
   flex: 1;
   padding: 30px;
-  background: #eaeaea;
-  border-radius: 8px;
+  background: linear-gradient(to bottom, #cbcbcb, #a9a9a9);
+  border-radius: 18px;
+}
+.bygg-renovering-page .br-service-card h2 {
+  margin: 0 0 10px;
+  font-weight: 300;
+  font-size: 1.7rem;
 }
 .bygg-renovering-page .br-service-card p {
+  font-weight: 3200;
+  font-size: 1.3rem;
   color: #111;
 }
 .bygg-renovering-page .br-extra {
@@ -481,4 +492,8 @@ button:hover {
     display: flex;
     flex-direction: row;
   }
+}
+.bygg-renovering-page button {
+  font-size: 1.5rem;
+  font-weight: 100;
 }
