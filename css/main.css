@@ -493,7 +493,51 @@ button:hover {
     flex-direction: row;
   }
 }
-.bygg-renovering-page button {
-  font-size: 1.5rem;
-  font-weight: 100;
+.bygg-renovering-page {
+  /* FORM TOGGLE */
+}
+.bygg-renovering-page .form-toggle {
+  display: none;
+}
+.bygg-renovering-page .br-form-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+.bygg-renovering-page .form-toggle:checked ~ .br-form-modal {
+  opacity: 1;
+  pointer-events: all;
+}
+.bygg-renovering-page .br-form-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  width: 400px;
+  position: relative;
+}
+.bygg-renovering-page .br-form-box input,
+.bygg-renovering-page .br-form-box textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+.bygg-renovering-page .close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+}
+.bygg-renovering-page .open-btn {
+  display: inline-block;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #c4c4c4, #e6e6e6);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  border-radius: 18px;
 }

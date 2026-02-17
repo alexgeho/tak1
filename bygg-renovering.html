@@ -23,21 +23,19 @@
       <div class="br-service-card">
         <h2>Takrenovering</h2>
         <p>Kvalitativa taklösningar som skyddar ditt hus mot väder och slitage.</p>
-        <button>Boka gratis besök</button>
+        <label for="form-toggle" class="open-btn">Boka gratis besök</label>
       </div>
 
       <div class="br-service-card">
         <h2>Badrum</h2>
         <p>Vi renoverar badrum med fokus på funktion, stil och hållbarhet.</p>
-        <button>Boka gratis besök</button>
-
+        <label for="form-toggle" class="open-btn">Boka gratis besök</label>
       </div>
 
       <div class="br-service-card">
         <h2>Byggprojekt</h2>
         <p>Allt från mindre renoveringar till större byggprojekt utförs med precision.</p>
-        <button>Boka gratis besök</button>
-
+        <label for="form-toggle" class="open-btn">Boka gratis besök</label>
       </div>
     </div>
   </section>
@@ -50,6 +48,23 @@
       </p>
     </div>
   </section>
+
+  <input type="checkbox" id="form-toggle" class="form-toggle">
+
+  <div class="br-form-modal">
+    <div class="br-form-box">
+      <label for="form-toggle" class="close">✕</label>
+
+      <h3>Boka gratis besök</h3>
+
+      <form action="https://formspree.io/f/your-id" method="POST">
+        <input type="text" name="name" placeholder="Namn" required>
+        <input type="tel" name="phone" placeholder="Telefon" required>
+        <textarea name="message" placeholder="Beskriv projekt"></textarea>
+        <button type="submit">Skicka</button>
+      </form>
+    </div>
+  </div>
 
 </body>
 
