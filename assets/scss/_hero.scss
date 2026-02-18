@@ -2,7 +2,7 @@
 .hero {
   position: relative;
   padding: 60px 20px;
-  background: url('../images/hero.jpg') center/cover no-repeat;
+  background: url('./assets/images/hero.jpg') center/cover no-repeat;
   color: #fff;
 
   &::before {
