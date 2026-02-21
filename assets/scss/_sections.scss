@@ -26,7 +26,11 @@
 }
 
 .faq {
-  max-width: 800px;
+  max-width: 600px;
+}
+
+.blog {
+  max-width: 600px;
 }
 
 .faq-item {
@@ -39,6 +43,14 @@
 
 
 @media (min-width: 768px) {
+
+  .sectionRow {
+    display: flex;
+    justify-content: center;
+  }
+
+
+
   .two-column {
     flex-direction: row;
     align-items: center;
