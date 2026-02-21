@@ -1,13 +1,14 @@
-.blog-grid {
-  display: flex;
- flex-direction: column;
-  gap: 30px;
-  margin-top: 30px;
+.blog-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 24px;
 }
 
-.blog-card {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+.blog-item {
+  background: $color-white;
+  border-radius: $radius;
+  box-shadow: $shadow-soft;
+  padding: 24px;
 }

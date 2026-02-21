@@ -438,18 +438,19 @@ button:hover {
   color: #aaa;
 }
 
-.blog-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin-top: 30px;
+.blog-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 24px;
 }
 
-.blog-card {
-  background: white;
-  padding: 20px;
+.blog-item {
+  background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  padding: 24px;
 }
 
 .bygg-renovering-page .br-container {
