@@ -339,29 +339,8 @@
 
           <ul class="blog-list">
             <!-- BLOG_HOME_START -->
-<li class="blog-item">
-  <h3>
-    <a href="/blogg/ruttet-tak.html">ruttet tak</a>
-  </h3>
-  <p class="blog-date">2026-02-22</p>
-  <p>Ett ruttet tak kan orsaka stora problem för fastighetsägare ...</p>
-  <a href="/blogg/ruttet-tak.html">Läs mer →</a>
-</li>
-<li class="blog-item"><h3>
-    <a href="/blogg/dddddddddd.html">dddddddddd</a>
-  </h3>
-  <p class="blog-date">2026-02-22</p>
-  <p>dddddddddd</p>
-  <a href="/blogg/dddddddddd.html">Läs mer →</a>
-</li>
-<li class="blog-item"><h3>
-    <a href="/blogg/time-is-now.html">Time is NOW!</a>
-  </h3>
-  <p class="blog-date">2026-02-22</p>
-  <p>Time is NOW!</p>
-  <a href="/blogg/time-is-now.html">Läs mer →</a>
-</li>
-<!-- BLOG_HOME_END -->
+
+            <!-- BLOG_HOME_END -->
           </ul>
 
         </div>
@@ -406,35 +385,7 @@
       </div>
     </div>
   </footer>
-<script>
-async function loadBlogPosts() {
-  const response = await fetch("https://publish-core.onrender.com/posts");
-  const posts = await response.json();
 
-  const blogList = document.getElementById("blog-list");
-  blogList.innerHTML = "";
-
-  posts
-    .sort((a, b) => new Date(b.date) - new Date(a.date))
-    .forEach(post => {
-      const li = document.createElement("li");
-      li.className = "blog-item";
-
-      li.innerHTML = `
-        <h3>
-          <a href="/blogg/${post.slug}.html">${post.title}</a>
-        </h3>
-        <p class="blog-date">${post.date}</p>
-        <p>${post.excerpt}</p>
-        <a href="/blogg/${post.slug}.html">Läs mer →</a>
-      `;
-
-      blogList.appendChild(li);
-    });
-}
-
-loadBlogPosts();
-</script>
 </body>
 
 </html>
