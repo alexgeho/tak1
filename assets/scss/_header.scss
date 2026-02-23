@@ -1,6 +1,264 @@
+
+/* Hero Section - Mobile First */
+.hero {
+  position: relative;
+  padding: 60px 20px;
+  background: url("../assets/images/hero.jpg") center/cover no-repeat;
+  color: #fff;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  background: url("../assets/images/hero.jpg") center/cover no-repeat;
+}
+.hero .hero-grid {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding: 20px;
+}
+.hero .hero-text {
+  flex: 1;
+  max-width: 100%;
+  text-align: center;
+}
+.hero .hero-text h1 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+.hero .hero-text p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.95);
+}
+.hero .hero-text .hero-benefits {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.hero .hero-text .hero-benefits .benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.95);
+}
+.hero .hero-text .hero-benefits .benefit-item .check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: #1f5edc;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+}
+.hero .form-box {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+.hero .form-box h2 {
+  color: #1f5edc;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.hero .form-box .form-contact-info {
+  margin-bottom: 16px;
+  text-align: center;
+}
+.hero .form-box .form-contact-info .phone-big {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1f5edc;
+  margin-bottom: 4px;
+}
+.hero .form-box .form-contact-info .email-small {
+  font-size: 0.9rem;
+  color: #555;
+}
+.hero .form-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.hero .form-box form input,
+.hero .form-box form textarea {
+  padding: 12px;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.hero .form-box form input:focus,
+.hero .form-box form textarea:focus {
+  outline: none;
+  border-color: #1f5edc;
+  box-shadow: 0 0 0 3px rgba(31, 94, 220, 0.15);
+}
+.hero .form-box form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+.hero .form-box form button {
+  margin-top: 8px;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  background-color: #1f5edc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.hero .form-box form button:hover {
+  background-color: rgb(24.7011952191, 74.9003984064, 175.2988047809);
+}
+
+/* Desktop - min-width 992px */
+@media (min-width: 992px) {
+  .hero {
+    padding: 60px 24px;
+  }
+  .hero .hero-grid {
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero .hero-text {
+    text-align: left;
+  }
+  .hero .hero-text h1 {
+    font-size: 5rem;
+  }
+  .hero .hero-text p {
+    font-size: 2rem;
+  }
+  .hero .hero-text .hero-benefits {
+    gap: 16px;
+  }
+  .hero .hero-text .hero-benefits .benefit-item {
+    font-size: 1.6rem;
+  }
+  .hero .hero-text .hero-benefits .benefit-item .check {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+  .hero .form-box {
+    max-width: 480px;
+    padding: 40px;
+  }
+  .hero .form-box h2 {
+    font-size: 2rem;
+  }
+  .hero .form-box .form-contact-info {
+    text-align: left;
+  }
+  .hero .form-box form {
+    gap: 18px;
+  }
+  .hero .form-box form input,
+  .hero .form-box form textarea {
+    padding: 16px;
+    font-size: 1.1rem;
+  }
+  .hero .form-box form textarea {
+    min-height: 120px;
+  }
+  .hero .form-box form button {
+    padding: 16px;
+    font-size: 1.1rem;
+  }
+}
+.two-column {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.two-column img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.trust {
+  text-align: center;
+}
+
+.trust-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.trust-list li {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.faq {
+  max-width: 600px;
+}
+
+.blog {
+  max-width: 600px;
+}
+
+.faq-item {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .sectionRow {
+    display: flex;
+    justify-content: center;
+  }
+  .two-column {
+    flex-direction: row;
+    align-items: center;
+  }
+  .two-text-column {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  .two-column .text {
+    flex: 0 0 60%;
+  }
+  .two-column .image {
+    flex: 0 0 40%;
+  }
+}
 .header {
   background: white;
-  border-bottom: 1px solid $color-border;
+  border-bottom: 1px solid #e5e7eb;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -47,12 +305,157 @@
   .burger {
     display: none;
   }
-
   .nav {
     display: flex;
     position: static;
     flex-direction: row;
     width: auto;
     padding: 0;
+  }
+}
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 60px 20px 20px;
+}
+.footer a {
+  color: #f68b1e;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.footer a:hover {
+  color: #fff;
+}
+.footer .footer-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (min-width: 768px) {
+  .footer .footer-grid {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+.footer .footer-grid .footer-cta {
+  flex: 1;
+}
+.footer .footer-grid .footer-cta h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+.footer .footer-grid .footer-cta p {
+  margin: 5px 0;
+}
+.footer .footer-grid .footer-cta .btn-footer {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #f68b1e;
+  color: #fff;
+  border-radius: 6px;
+}
+.footer .footer-grid .footer-services,
+.footer .footer-grid .footer-social {
+  flex: 0 0 200px;
+}
+.footer .footer-grid .footer-services h4,
+.footer .footer-grid .footer-social h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.footer .footer-grid .footer-services ul,
+.footer .footer-grid .footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .footer-grid .footer-services ul li,
+.footer .footer-grid .footer-social ul li {
+  margin-bottom: 8px;
+}
+.footer .footer-bottom {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.blog-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 24px;
+}
+
+.blog-item {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  padding: 24px;
+}
+
+.bygg-renovering-page .br-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  background-color: #fff h1;
+  background-color-font-weight: 300;
+}
+.bygg-renovering-page .br-container p {
+  color: #f2f2f2;
+  font-size: 1.5rem;
+}
+.bygg-renovering-page .br-container {
+  display: flex;
+  flex-direction: column;
+}
+.bygg-renovering-page .br-hero {
+  padding: 60px 0;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  background-image: url("../images/byggRenovering/heroRenovering.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bygg-renovering-page .br-hero h1 {
+  font-size: 3rem;
+}
+.bygg-renovering-page .br-services {
+  padding: 40px 0;
+}
+.bygg-renovering-page .br-services-grid {
+  display: flex;
+  gap: 40px;
+}
+.bygg-renovering-page .br-service-card {
+  flex: 1;
+  padding: 30px;
+  background: linear-gradient(to bottom, #cbcbcb, #a9a9a9);
+  border-radius: 18px;
+}
+.bygg-renovering-page .br-service-card h2 {
+  margin: 0 0 10px;
+  font-weight: 300;
+  font-size: 1.7rem;
+}
+.bygg-renovering-page .br-service-card p {
+  font-weight: 3200;
+  font-size: 1.3rem;
+  color: #111;
+}
+.bygg-renovering-page .br-extra {
+  text-align: center;
+}
+.bygg-renovering-page .br-extra p {
+  color: #111;
+}
+@media (min-width: 992px) {
+  .bygg-renovering-page .br-services-grid {
+    display: flex;
+    flex-direction: row;
   }
 }

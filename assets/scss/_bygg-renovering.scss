@@ -1,139 +1,49 @@
+
 .bygg-renovering-page {
-
-  .br-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 24px;
-
-    background-color: #fff h1 {
-      font-weight: 300;
-    }
-
-    p {
-      color: #f2f2f2;
-      font-size: 1.5rem;
-    }
-
-    display: flex;
-    flex-direction: column;
-  }
-
-  .br-hero {
-    padding: 60px 0;
-    background: #111;
-    color: #fff;
-    text-align: center;
-
-    background-image: url('../images/byggRenovering/heroRenovering.jpg');
-    background-size: cover;  
-    background-position: center;  
-    background-repeat: no-repeat;
-  }
-
-  .br-hero h1 {
-    font-size: 3rem;
-  }
-
-  .br-services {
-    padding: 40px 0;
-  }
-
-  .br-services-grid {
-    display: flex;
-    gap: 40px;
-  }
-
-  .br-service-card {
-    flex: 1;
-    padding: 30px;
-    background: linear-gradient(to bottom, #cbcbcb, #a9a9a9);
-    border-radius: 18px;
-
-    h2 {
-      margin: 0 0 10px;
-      font-weight: 300;
-      font-size: 1.7rem;
-    }
-
-    p {
-      font-weight: 3200;
-      font-size: 1.3rem;
-      color: #111;
-    }
-  }
-
-  .br-extra {
-    text-align: center;
-
-    p {
-      color: #111;
-    }
-  }
-
-  @media (min-width: 992px) {
-    .br-services-grid {
-      display: flex;
-      flex-direction: row;
-    }
-  }
-
-  // button {
-  //   font-size: 1.5rem;
-  //   font-weight: 100;
-  // }
-
-
   /* FORM TOGGLE */
-  .form-toggle {
-    display: none;
-  }
-
-  .br-form-modal {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.3s;
-  }
-
-  .form-toggle:checked~.br-form-modal {
-    opacity: 1;
-    pointer-events: all;
-  }
-
-  .br-form-box {
-    background: #fff;
-    padding: 40px;
-    border-radius: 16px;
-    width: 400px;
-    position: relative;
-  }
-
-  .br-form-box input,
-  .br-form-box textarea {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-  }
-
-  .close {
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    cursor: pointer;
-  }
-
-  .open-btn {
-    display: inline-block;
-    cursor: pointer;
-    background: linear-gradient(to bottom, #c4c4c4, #e6e6e6);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    padding: 10px;
-    border-radius: 18px;
-  }
-
+}
+.bygg-renovering-page .form-toggle {
+  display: none;
+}
+.bygg-renovering-page .br-form-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+.bygg-renovering-page .form-toggle:checked ~ .br-form-modal {
+  opacity: 1;
+  pointer-events: all;
+}
+.bygg-renovering-page .br-form-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  width: 400px;
+  position: relative;
+}
+.bygg-renovering-page .br-form-box input,
+.bygg-renovering-page .br-form-box textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+.bygg-renovering-page .close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+}
+.bygg-renovering-page .open-btn {
+  display: inline-block;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #c4c4c4, #e6e6e6);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  border-radius: 18px;
 }
